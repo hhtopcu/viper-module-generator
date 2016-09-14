@@ -70,13 +70,13 @@ The implementation scheme returned by this generator is hardly inspired in the e
 |   +-- VIPERDataManager.swift
 +-- Interactor
 |   +-- VIPERInteractor.swift
-|   +-- VIPERInteractorSpec.swift
+|   +-- VIPERInteractorTests.swift
 +-- Presenter
 |   +-- VIPERPresenter.swift
-|   +-- VIPERPresenterSpec.swift
+|   +-- VIPERPresenterTests.swift
 +-- View
 |   +-- VIPERView.swift
-|   +-- VIPERViewSpec.swift
+|   +-- VIPERViewTests.swift
 +-- WireFrame
 |   +-- VIPERWireFrame.swift
 +-- Protocols
@@ -85,27 +85,27 @@ The implementation scheme returned by this generator is hardly inspired in the e
 ## How to install vipergen ?
 You can install it easily as using the gem. With ruby installed in your OSX execute:
 ```bash
-sudo gem install vipergen-roche
+sudo gem install vipergen-xctestable
 ```
 If everything were right, you should have now the vipergem command available in your system console
 
 ## How to generate a VIPER module with a given name?
 You have just to execute the following command
 ```bash
-vipergen generate MyFirstViperModule --path=~/myproject/shared
+vipergen-xctestable generate MyFirstViperModule --path=~/myproject/shared
 ```
 And then the files structure will be automatically created. Don't forget to add this folder to your project dragging it into the XCode/Appcode inspector
 
 ## What options are available in generator?
 You have just to execute the following command
 ```bash
-vipergen help generate
+vipergen-xctestable help generate
 ```
 And then you will see all options available
 
 Sample:
 ```bash
-vipergen generate <Module_Name> --path=<Path> --language=swift --author='michal' --template=testable --swift-module <MY_Project>
+vipergen-xctestable generate <Module_Name> --path=<Path> --language=swift --author='michal' --template=testable --swift-module <MY_Project>
 ```
 
 ## How can I try the demo project?
@@ -122,8 +122,8 @@ vipergen generate <Module_Name> --path=<Path> --language=swift --author='michal'
 When the gem is updated it has to be reported to the gem repository. I followed this tutorial http://amaras-tech.co.uk/article/43/Creating_executable_gems that basically says that once you have your gem ready execute:
 ```bash
 gem build vipergen.gemspec
-gem install vipergen-0.1.gem
-gem push vipergen-0.1.gem
+gem install vipergen-xctestable-0.3.0.gem
+gem push vipergen-xctestable-0.3.0.gem
 ```
 Then you'll be asked for your credentials in order to make the update in the repo (http://guides.rubygems.org/publishing/)
 
@@ -144,6 +144,7 @@ updated_at: 2014-08-24
 ### Available Templates
 - default by pepimbur
 - testable by wojtysim (includes Spec file templates for Interactor, Presenter and View)
+- xctestable by hhtopcu (Swift 3.0 compliant and XCTest copmliant)
 
 ## Resources
 - Redbooth presentation: https://speakerdeck.com/sergigracia/clean-architecture-viper

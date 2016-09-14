@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.summary     = 'Generates XCode VIPER module controllers structure'
   s.email       = 'hhtopcu@gmail.com'
   s.homepage    = 'https://github.com/hhtopcu/viper-module-generator'
-  s.description = 'Based on the objc.io post about VIPER. It saves time in the implementation generating the controllers and adding interactions between them (in Swift or Objective-C)'
+  s.description = 'Swift 3.0 compliant VIPER architecture based on the objc.io post about VIPER. It saves time in the implementation generating the controllers and adding interactions between them (in Swift or Objective-C)'
   s.authors     = ['Pedro Piñera','Michal Wojtysiak', "Hasan Huseyin Topcu"]
   s.license     = 'MIT'
 
