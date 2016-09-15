@@ -6,10 +6,8 @@
 import Foundation
 import UIKit
 
-final class VIPERWireFrame: VIPERWireFrameProtocol
-{
-    class func setupVIPERModule(object: AnyObject) -> UIViewController
-    {
+final class VIPERWireFrame: VIPERWireFrameProtocol {
+    class func setupVIPERModule(object: AnyObject) -> UIViewController {
         // Generating module components
         let view: VIPERViewProtocol = VIPERView()
         let presenter: VIPERPresenterProtocol & VIPERInteractorOutputProtocol = VIPERPresenter()
