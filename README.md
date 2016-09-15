@@ -92,14 +92,14 @@ If everything were right, you should have now the vipergem command available in 
 ## How to generate a VIPER module with a given name?
 You have just to execute the following command
 ```bash
-vipergen-xctestable generate MyFirstViperModule --path=~/myproject/shared
+vipergen generate MyFirstViperModule --path=~/myproject/shared
 ```
 And then the files structure will be automatically created. Don't forget to add this folder to your project dragging it into the XCode/Appcode inspector
 
 ## What options are available in generator?
 You have just to execute the following command
 ```bash
-vipergen-xctestable help generate
+vipergen help generate
 ```
 And then you will see all options available
 
