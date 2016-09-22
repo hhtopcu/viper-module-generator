@@ -7,7 +7,7 @@ import XCTest
 
 @testable import SWIFT_MODULE
 
-class VIPERInteractorTests: XCTestCase{
+class VIPERInteractorTests: XCTestCase {
  
     class Mock{
         

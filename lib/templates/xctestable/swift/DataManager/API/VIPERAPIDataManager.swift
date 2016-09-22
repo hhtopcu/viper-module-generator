@@ -5,7 +5,6 @@
 
 import Foundation
 
-final class VIPERAPIDataManager: VIPERAPIDataManagerInputProtocol
-{
+final class VIPERAPIDataManager: VIPERAPIDataManagerInputProtocol {
     init() {}
 }
